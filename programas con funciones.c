@@ -16,7 +16,7 @@ int factorial(int n) {
     return (n == 0) ? 1 : n * factorial(n - 1);
 }
 
-// 3. Área de un circulo
+// 3. area de un circulo
 double area_circulo(double radio) {
     return M_PI * radio * radio;
 }
@@ -69,7 +69,7 @@ void jugar_adivinanza() {
     srand(time(0));
     int numero_secreto = rand() % 100 + 1;
     int intento, intentos = 0;
-    printf("Adivina el número entre 1 y 100\n");
+    printf("Adivina el nÃºmero entre 1 y 100\n");
     do {
         printf("Ingresa tu intento: ");
         scanf("%d", &intento);
@@ -79,7 +79,7 @@ void jugar_adivinanza() {
         } else if (intento < numero_secreto) {
             printf("Demasiado bajo\n");
         } else {
-            printf("�Felicidades! Adivinaste el numero en %d intentos\n", intentos);
+            printf("¡Felicidades! Adivinaste el numero en %d intentos\n", intentos);
         }
     } while (intento != numero_secreto);
 }
@@ -88,8 +88,8 @@ int main() {
     int opcion;
     do {
         printf("\nMenu de opciones:\n");
-        printf("1. Suma de dos números\n");
-        printf("2. Factorial de un número\n");
+        printf("1. Suma de dos numeros\n");
+        printf("2. Factorial de un numero\n");
         printf("3. area de un circulo\n");
         printf("4. Numeros primos hasta N\n");
         printf("5. Ordenar un arreglo\n");
@@ -97,7 +97,7 @@ int main() {
         printf("7. Matriz transpuesta\n");
         printf("8. Juego de adivinanza\n");
         printf("9. Salir\n");
-        printf("Seleccione una opción: ");
+        printf("Seleccione una opciÃ³n: ");
         scanf("%d", &opcion);
         
         switch (opcion) {
@@ -113,7 +113,7 @@ int main() {
                 printf("Ingrese un numero entero: ");
                 scanf("%d", &num);
                 int resultado = factorial(num);
-                if (resultado == -1) printf("No se puede calcular el factorial de un número negativo.\n");
+                if (resultado == -1) printf("No se puede calcular el factorial de un nÃºmero negativo.\n");
                 else printf("El factorial de %d es: %d\n", num, resultado);
                 break;
             }
